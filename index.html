@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mai Lợn</title>
+    <link rel="icon" href="./assets/img/icon.png">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/media.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">
+            <p class="logo-heading">
+                Năm anh em siêu nhân
+            </p>
+            <p class="logo-description">
+                Mr.An, Tiến, Trình, Mai Lợn and V.Anh 
+            </p>
+        </a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Chúc</a></li>
+            <li><a href="#">Mừng</a></li>
+            <li><a href="#">Sinh</a></li>
+            <li><a href="#">Nhật</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./assets/img/stars.png" alt="" id="stars">
+        <img src="./assets/img/moon.png" alt="" id="moon">
+        <img src="./assets/img/mountains_behind.png" alt="" id="mountains-behind">
+        <h2 id="main-text">Happy Birthday Mai Lợn</h2>
+        <a href="#sec" id="btn">Hello</a>
+        <img src="./assets/img/mountains_front.png" alt="" id="mountains-front">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>Ảnh troll nè</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum.</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_behind = document.getElementById('mountains-behind')
+        let main_text = document.getElementById('main-text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains-front')
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            main_text.style.marginRight = value * 4.5 + 'px';
+            main_text.style.marginTop = value * 0.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+</html>
