@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="./assets/media.css">
 </head>
+
 <body>
     <header id="header">
         <a href="#" class="logo">
@@ -16,7 +18,7 @@
                 Năm anh em siêu nhân
             </p>
             <p class="logo-description">
-                Mr.An, Tiến, Trình, Mai Lợn and V.Anh 
+                Mr.An, Tiến, Trình, Mai Lợn and V.Anh
             </p>
         </a>
         <ul class="navigation">
@@ -37,7 +39,65 @@
 
     <div class="sec" id="sec">
         <h2>Ảnh troll nè</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam ea vel voluptas, aut nulla, qui eveniet blanditiis rem itaque accusamus. Odio sequi unde expedita voluptate perferendis minus deserunt illum.</p>
+        <div class="horizontal">
+            <div class="img">
+                <img class="imgs square" src="./assets/img/mai/1.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="imgs square" src="./assets/img/mai/2.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="imgs square" src="./assets/img/mai/4.jpg" alt="">
+            </div>
+            <div class="horizontal-row2">
+                <div class="img">
+                    <img class="imgs horizontal-rectangle" src="./assets/img/mai/3.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img class="imgs horizontal-rectangle" src="./assets/img/mai/5.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img class="imgs horizontal-rectangle" src="./assets/img/mai/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="thanks-text">
+            <h3>
+                Hết mất rồi :((
+            </h3>
+        </div>
+        <div class="general">
+            <div class="general-row">
+                <div class="img">
+                    <img class="imgs long-rectangle" src="./assets/img/mai/4306a1a4543c9d62c42d5.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img class="imgs long-rectangle-2" src="./assets/img/mai/f72eecec1974d02a896513.png" alt="">
+                </div>
+            </div>
+            <div class="general-column">
+                <div class="img">
+                    <img class="imgs shorts" src="./assets/img/mai/b127c6d83340fa1ea3516.jpg" alt="">
+                </div>
+                <div class="text-link">
+                    <a class="link-fb" href="https://www.facebook.com/profile.php?id=100010896486045" class="link">@Mai Mai</a>
+                </div>
+                <div class="img">
+                    <img class="imgs shorts1" src="./assets/img/mai/849ffc2f09b7c0e999a62.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <span class="footer-text">
+                    Mặc dù hơi muộn nhưng hứa không quên. Chúc mừng sinh nhật 
+                </span>
+                <div class="footer-link">
+                    <a class="footer-link-text" href="https://www.facebook.com/profile.php?id=100010896486045" class="link">@Mai Mai</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script>
@@ -49,7 +109,7 @@
         let mountains_front = document.getElementById('mountains-front')
         let header = document.querySelector('header')
 
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             let value = window.scrollY;
             stars.style.left = value * 0.25 + 'px';
             mountains_behind.style.top = value * 0.5 + 'px';
@@ -62,4 +122,5 @@
     </script>
 
 </body>
+
 </html>
