@@ -142,7 +142,6 @@ section img#mountains-front {
   font-weight: 500;
   display: inline-block;
   transform: translateY(100px);
-  z-index: 10000000000;
 }
 
 .sec {
